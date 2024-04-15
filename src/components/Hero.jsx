@@ -1,36 +1,29 @@
-// import React from 'react';
-
-// const Hero = ({ user }) => {
-//   const link = user?.about.avatar.url
-//     return (
-//         <section className="hero-section">
-//             <div className="container">
-//               <h1><strong>USER:</strong></h1>
-//                 <h1>{user?.about?.name}</h1>
-//                 <h2>{user?.about?.title}</h2>
-//                 {/* <img src={`${link}`} alt="" /> */}
-//                 {/* Add any additional content */}
-//             </div>
-//         </section>
-//     );
-// };
-
-// export default Hero;
-
 import React from 'react';
 
 const Hero = ({ user }) => {
-    const link = user?.about.avatar.url;
-    return (
-        <section className="bg-blue-900 text-white py-16 px-4 sm:px-8">
-            <div className="container mx-auto text-center">
-                <h1 className="text-4xl sm:text-6xl font-bold">{user?.about?.name}</h1>
-                <p className="text-lg sm:text-xl mt-4">{user?.about?.title}</p>
-                <img src={user?.about.avatar.url} alt="" className="mt-8 mx-auto rounded-full h-32 w-32 sm:h-48 sm:w-48 object-cover" />
-            </div>
-        </section>
-    );
+
+  return (
+    <section className="py-12 px-4 sm:px-8 bg-gradient-to-r from-black to-gray-800 pt-16">
+
+      <div className="container mx-auto text-center">
+        <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-white">
+          {user?.about?.name}
+        </h1>
+        <p className="text-lg sm:text-xl mb-8 text-gray-300">
+          {user?.about?.title}
+        </p>
+        <div className="relative mx-auto w-32 h-32 sm:w-48 sm:h-48 mb-8">
+          <img
+            src={user?.about.avatar.url}
+            alt=""
+            className="rounded-full object-cover w-full h-full border-4 border-white"
+          />
+          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 opacity-25"></div>
+        </div>
+        
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
-

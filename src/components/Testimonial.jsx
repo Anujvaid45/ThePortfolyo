@@ -1,50 +1,3 @@
-// import React from 'react';
-
-// const Testimonials = ({ testimonials }) => {
-//     return (
-//         <section className="testimonials-section">
-//             <div className="container">
-//                 <h2>testimonials</h2>
-//                 <ul>
-//                     {testimonials?.map((testimonial) => (
-//                         <li key={testimonial.id}>
-//                             <span>{testimonial.name}</span>
-//                             <hr />
-//                             <span>{testimonial.position}</span>
-//                         </li>
-//                     ))}
-//                 </ul>
-//             </div>
-//         </section>
-//     );
-// };
-
-// export default Testimonials;
-
-// import React from 'react';
-
-// const Testimonial = ({ testimonials }) => {
-//     // Assume you have logic for auto slide here
-//     return (
-//         <section className="py-12 px-4 sm:px-8">
-//             <div className="container mx-auto">
-//                 <h2 className="text-2xl sm:text-4xl font-bold mb-4">Testimonials</h2>
-//                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-//                     {testimonials?.map((testimonial) => (
-//                         <div key={testimonial.id} className="bg-white rounded-lg shadow-md p-4">
-//                             <p>{testimonial.name}</p>
-                            
-//                              <p>{testimonial.position}</p>
-//                         </div>
-//                     ))}
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// };
-
-// export default Testimonial;
-
 import React, { useState, useEffect } from 'react';
 
 const Testimonial = ({ testimonials }) => {
@@ -59,9 +12,9 @@ const Testimonial = ({ testimonials }) => {
     }, [testimonials.length]);
 
     return (
-        <section className="py-12 px-4 sm:px-8 bg-gray-100">
+        <section className="py-12 px-4 sm:px-8 bg-gradient-to-r from-black to-gray-600 pt-16">
             <div className="container mx-auto">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center text-gray-800">Client Testimonials</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center text-white">Client Testimonials</h2>
                 <div className="flex items-center justify-center">
                     <div className="max-w-md w-full p-6 bg-white rounded-lg shadow-lg">
                         <div className="text-center">
