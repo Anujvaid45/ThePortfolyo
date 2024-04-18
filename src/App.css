@@ -1,3 +1,6 @@
 .modal-open {
     overflow: hidden;
 }
+.modal-content {
+    width: 60%;
+}

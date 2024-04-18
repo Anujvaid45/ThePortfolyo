@@ -145,7 +145,7 @@ function Home() {
                     className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-90 z-50 backdrop-filter backdrop-blur-sm"
                 >
                     {selectedProject && (
-                        <div className="bg-white rounded-2xl shadow-lg max-w-xl w-full relative overflow-hidden mt-16">
+                        <div className="bg-white rounded-2xl shadow-lg max-w-xl w-full mt-20 relative max-h-screen overflow-y-auto ">
                             <div className="p-8">
                                 <button
                                     className="absolute top-7 right-4 text-gray-600 hover:text-gray-800 focus:outline-none transition duration-300"
